@@ -37,7 +37,7 @@ passenger_type=乘客类型（只有普通和学生，如：普通）
 
 在pycharm中运行ticket.py
 
-![1](/1.png)
+![1](img/1.png)
 
 输入1 or 2（以2为例）
 
