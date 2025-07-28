@@ -118,9 +118,9 @@ driver.find_element(By.CSS_SELECTOR,'#train_date').click()
 driver.find_element(By.CSS_SELECTOR,'#train_date').send_keys(settings['train_date'])
 # 选择sf1普通票，sf2学生票
 passenger_type = settings['passenger_type']
-if passenger_type == 'sf1':
+if passenger_type == '普通':
     driver.find_element(By.CSS_SELECTOR,'#sf1')
-elif passenger_type == 'sf2':
+elif passenger_type == '学生':
     driver.find_element(By.CSS_SELECTOR,'#sf2')
 else:
     print('未知乘客类型，请仔细检查配置文件')
