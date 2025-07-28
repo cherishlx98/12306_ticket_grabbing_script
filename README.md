@@ -1,7 +1,3 @@
----
-typora-root-url: ./img
----
-
 # 12306抢票脚本
 python使用selenium实现12306抢票脚本
 
