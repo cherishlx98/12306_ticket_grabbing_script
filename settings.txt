@@ -1,0 +1,7 @@
+username=123456
+password=123456
+last4=0031
+fromStationText=永川东
+toStationText=重庆
+train_date=2025-08-08
+passenger_type=sf1
