@@ -5,9 +5,13 @@ python使用selenium实现12306抢票脚本
 
 Python版本：3.9+
 
-Selenium版本：4.31+
+Selenium版本：4.31+（使用国内镜像进行下载）
 
-谷歌浏览器驱动chromedriver（需区分Windows/Mac）：下载地址
+```shell
+pip install selenium -i https://pypi.tuna.tsinghua.edu.cn/simple
+```
+
+谷歌浏览器驱动chromedriver（需区分Windows/Mac）：已经在项目中配置，无需下载
 
 克隆项目代码：
 
