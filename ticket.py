@@ -139,6 +139,16 @@ time.sleep(1)
 driver.find_element(By.CSS_SELECTOR,'#queryLeftTable tr:nth-child(1) .btn72').click()
 
 time.sleep(1)
+# todo 等待乘客信息显示出来，轮询接口，直到显示出来
+# 前端是#normalPassenger_0，后端是轮询queryOrderWaitTime接口，判断waitTime是-100还是-1
+while True:
+    try:
+        driver.find_element(By.CSS_SELECTOR,'#normalPassenger_0')
+        break
+    except:
+        time.sleep(1)
+        print('等待乘客信息显示出来...')
+
 driver.find_element(By.CSS_SELECTOR,'#normalPassenger_0').click()
 
 driver.find_element(By.CSS_SELECTOR,'#submitOrder_id').click()
@@ -146,5 +156,6 @@ time.sleep(1)
 driver.find_element(By.CSS_SELECTOR,'#qr_submit_id').click()
 print('已提交订单，请在12306官网或APP完成支付')
 
+# todo：等待跳转
 # 关闭浏览器
 driver.quit()
