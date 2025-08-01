@@ -138,11 +138,11 @@ driver.find_element(By.CSS_SELECTOR,'#query_ticket').click()
 time.sleep(1)
 driver.find_element(By.CSS_SELECTOR,'#queryLeftTable tr:nth-child(1) .btn72').click()
 
-time.sleep(0.5)
+time.sleep(1)
 driver.find_element(By.CSS_SELECTOR,'#normalPassenger_0').click()
 
 driver.find_element(By.CSS_SELECTOR,'#submitOrder_id').click()
-time.sleep(0.5)
+time.sleep(1)
 driver.find_element(By.CSS_SELECTOR,'#qr_submit_id').click()
 print('已提交订单，请在12306官网或APP完成支付')
 
